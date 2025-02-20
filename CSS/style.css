@@ -1,0 +1,171 @@
+/*En esta sección está el código CSS de la web, está divido en tres secciones,
+cada uno para una de las webs del sitio web, para que sea más visual y claro*/
+
+/*CSS de la página index.html*/
+.BodyIndex {
+    background-image: url(../IMG/fondo.jpg); /*Pone una imagen de fondo*/
+    background-size: cover; /*Expande la imagen hacia los lados*/
+    background-position: center; /*Posiciona la imagen*/
+    background-repeat: no-repeat; /*Hace que la imagen no se repita en caso de no 
+    poder ocupar toda la altura de la pantalla*/
+    text-align: center; /*Centra el contenido*/
+    height: 100vh; /*Se asegura de que ocupe el 100% en vertical y horizontal*/
+    margin: auto; /*Elimina los márgenes laterales de la imagen*/
+}
+
+.Logo {
+    width: 200px; /* Ancho del Logo */
+    height: 200px; /* Alto del Logo */
+    background-image: url(../IMG/logo.PNG); /* Pone de la imagen */
+    background-size: contain; /* Ajusta la imagen dentro del div sin recortarla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita la repetición */
+    margin:auto; /*Centra horizontalmente*/
+}
+
+@font-face { /*De este modo introducimos una fuente que no depende de lo que tenga
+    instalado el usuario en su sistema*/
+    font-family: 'BreakingBad'; /*Establecemos el nombre de la fuente*/
+    src: url(../Assets/Breaking_Bad.ttf) format('truetype'); /*localizamos la fuente en la web*/
+}
+
+.IdidIt {
+    font-family: 'BreakingBad', sans-serif; /*Invocamos la fuente*/
+    text-align: center; /*alineación de la fuente*/
+    font-size: 40px; /*tamaño, que no viene indicado por el cliente, por lo que hacemos que
+    quede como está en la imagen de muestra*/
+    color:white; /*color de la fuente*/
+}
+
+#Poster {
+    width: 700px; /* Ancho del Poster */
+    height: 300px; /* Alto del Poster */
+    margin:auto; /*Centra horizontalmente*/
+    border: 10px outset brown; /*color del borde y grosor*/
+    border-radius: 22px; /*estilo de borde*/
+}
+
+
+/*CSS de la página formulario.html*/
+.BodyFormulario {
+    background-image: url(../IMG/fondo.jpg); /*Pone una imagen de fondo*/
+    background-size: cover; /*Expande la imagen hacia los lados*/
+    background-position: center; /*Posiciona la imagen*/
+    background-repeat: no-repeat; /*Hace que la imagen no se repita en caso de no 
+    poder ocupar toda la altura de la pantalla*/
+    text-align: center; /*Centra el contenido*/
+    height: 90vh; /*Se asegura de que ocupe el 100% en vertical y horizontal*/
+    margin: auto; /*Elimina los márgenes laterales de la imagen*/
+    color:white; /*cambio de color de la fuente a blanco para que destaque sobre el fondo*/
+    font-family: Helvetica, sans-serif;
+    padding: 2px;
+}
+
+.tablacentrada { /*Con esto vamos a hacer que las tres forms que hay en medio queden centradas y bonitas*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ampliado1{
+    width: 13em;
+}
+
+.ampliado2{
+    width: 12em;
+}
+.formulario {
+    background-color: rgba(255, 255, 255, 0.3); /* Damos un tono semiopaco, para que se
+    lea mejor el texto del formulario */
+    margin-right: 200px; /* Añade márgenes de 100px a la derecha */
+    margin-left: 200px; /* Añade márgenes de 100px a la izquierda */
+    margin-bottom: 2em;
+    line-height: 1.5; /*Le ponemos un mayor tamaño a línea, porque quedaba muy apretujado todo*/
+}
+
+
+/*CSS de la página tabla.html*/
+#fondo-tabla{
+    background-color: #0c3e11;
+}
+
+.cabecera {
+    background-image: url(../IMG/cabecera.png); /* Ruta de la imagen */
+    width: 450px;
+    height: 220px;
+    background-size: auto; /* Mantiene el tamaño original de la imagen */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-bottom: 2em; /* Añade un espacio de 20px debajo de la cabecera */
+}
+
+#tabla1{
+    border-spacing: 5px;
+    background-color: #34352f;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    margin: 2em, auto;
+}
+
+td{
+    width: 70px;
+    height: 70px; 
+    text-align: center; 
+}
+
+#tabla2{
+    border-spacing: 5px;
+    background-color: #34352f;
+    font-family: Helvetica, sans-serif;
+    margin: auto;
+    margin-top: 2em;
+}
+
+.celda1{
+    background-color: #b7db21;
+}
+
+.celda2{
+    background-color: #eff6cc;
+}
+
+.celda3{
+    background-color: #89a419;
+}
+
+.celda4{
+    background-color: #637124;
+}
+
+.celda5{
+    background-color: #c5e24a;
+}
+
+.celda6{
+    background-color: #bcc49f;
+}
+
+.celda7{
+    background-color: #828d4f;
+}
+
+.celda8{
+    background-color: #d5e973;
+}
+
+.celda9{
+    background-color: #c2c41d;
+}
+
+.celda10{
+    background-color: #ab8fcc;
+}
+
+.BigText{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.SmallText{
+    font-size: 10px;
+}

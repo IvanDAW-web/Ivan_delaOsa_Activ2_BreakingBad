@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- meta charset = UTF-8, es un metadato que sirve para codificar en código UTF-8 los caracteres especiales 
+     tales como acentos, diéresis, etc. y que se muestran en nuestra web -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Se utiliza para indicar que vamos a utilizar propiedades responsive: adaptadas a pantallas de distintos dimensiones-->
+    <meta name="author" content="Iván de la Osa" />
+    <meta name="generator" content="VSC" />
+    <meta name="description" content="Ejercicio Breaking Bad Segundo Trimestre, Página Formulario" />
+    <title>Formulario</title>
+    <link rel="shortcut icon" href="IMG/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <h1>Breaking Bad – ¡Que comience el juego!</h1>
+    <body class="BodyFormulario">
+    <div class="formulario">
+    <form name="datos" method="post" action="mailto:raul.rodriguez@proeducaglobal.com">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label>Nombre*: <input type="text" name="nombre" required></label>
+            <label>Apellidos*: <input type="text" name="apellidos" required></label>
+            <label>Dirección Postal:</label>
+            <input type="text" name="calle" placeholder="Calle">
+            <input type="text" name="numero" placeholder="Número">
+            <input type="text" name="piso" placeholder="Piso">
+            <input type="text" name="codigo_postal" placeholder="Código Postal">
+            <input type="text" name="ciudad" placeholder="Ciudad">
+            <br>
+            <label>DNI: <input type="text" name="dni"></label>
+            <label>Correo Electrónico*: <input type="email" name="email" required></label>
+        </fieldset>
+        <table class="tablacentrada">
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend class="ampliado1">Sexo y Fecha de Nacimiento</legend>
+                        <label><input type="radio" name="sexo" value="hombre"> Hombre</label>
+                        <label><input type="radio" name="sexo" value="mujer"> Mujer</label>
+                        <br> <br> <!--Añadimos este break, para separar los campos-->
+                        <input type="date" name="fecha_nacimiento">
+                    </fieldset>
+                </td>
+                <td>
+                    <fieldset>
+                        <legend class="ampliado2">Elige tu personaje favorito</legend>
+                        <select name="personaje">
+                            <option value="jessie">Jessie Pinkman</option>
+                            <option value="walter">Walter White</option>
+                            <option value="saul">Saul Goodman</option>
+                            <option value="gustavo">Gustavo Fring</option>
+                            <option value="pollos">Pollos Hermanos</option>
+                            <option value="otros">Otros personajes</option>
+                        </select>
+                    </fieldset>
+                </td>
+                <td>
+                    <fieldset>
+                        <legend>Comentarios</legend>
+                        <textarea name="comentarios" rows="4" placeholder="¿Tienes algo que contarnos?"></textarea>
+                    </fieldset>
+                </td>
+            </tr>
+        </table>
+        <fieldset>
+            <legend>Adjuntar Archivos</legend>
+            <input type="file" name="archivo">
+        </fieldset>
+
+        <button type="submit" class="enviar">Enviar</button>
+        <button type="reset" class="borrar">Borrar</button>
+
+    </form>
+    </div>
+</body>
+</html>
